@@ -1,0 +1,346 @@
+@media (max-width: 1300px)
+{
+  /* Products Section */
+  .products-wrapper
+  {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 1100px)
+{
+  /* Main Section */
+  .main-container
+  {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    height: 90%;
+  }
+
+  .main-card--container
+  {
+    display: flex;
+    justify-content: center;
+  }
+
+  .main-card--card
+  {
+    height: 36rem;
+    width: 36rem;
+  }
+
+  .main-content
+  {
+    text-align: center;
+    margin-bottom: 6.4rem;
+  }
+
+  .main-heading
+  {
+    margin-top: 3.2rem;
+    font-size: 2.4rem;
+  }
+
+  .main-text
+  {
+    margin-top: 1.6rem;
+    font-size: 3rem;
+  }
+
+  /* Footer Section */
+  .footer-container
+  {
+    column-gap: 4.8rem;
+    row-gap: 6.4rem;
+  }
+
+  .main-content:nth-child(1)
+  {
+    grid-row: 2;
+  }
+}
+
+@media (max-width: 960px)
+{
+  /* Navigation Menu */
+  .navbar-container
+  {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0;
+  }
+
+  .navbar-menu
+  {
+    display: grid;
+    grid-template-columns: auto;
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    transition: all 0.5s;
+    top: -100rem;
+    opacity: 0;
+    height: 50vh;
+    z-index: -1;
+    background: #131313;
+  }
+
+  .navbar-menu.active
+  {
+    background: #131313;
+    top: 100%;
+    opacity: 1;
+    transition: all 0.5;
+    z-index: 99;
+    height: 65vh;
+    font-size: 2.4rem;
+  }
+
+  #navbar-logo
+  {
+    padding-left: 2.5rem;
+  }
+
+  .navbar-toggle .bar 
+  {
+    display: block;
+    cursor: pointer;
+    width: 2.5rem;
+    height: 0.3rem;
+    margin: 0.5rem auto;
+    transition: all 0.3s;
+    background: #fff;
+  }
+
+  .navbar-item
+  {
+    width: 100%;
+  }
+
+  .navbar-links
+  {
+    text-align: center;
+    padding: 3.2rem;
+    width: 100%;
+    display: table;
+  }
+
+  #mobile-menu
+  {
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    transform: translate(5%, 20%);
+  }
+
+  .navbar-button
+  {
+    padding-bottom: 3.2rem;
+  }
+
+  .button 
+  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 8rem;
+    margin: 0;
+  }
+
+  #mobile-menu.is-active .bar:nth-child(1)
+  {
+    transform: translateY(0.8rem) rotate(45deg);
+  }
+
+  #mobile-menu.is-active .bar:nth-child(2)
+  {
+    opacity: 0;
+  }
+
+  #mobile-menu.is-active .bar:nth-child(3)
+  {
+    transform: translateY(-0.8rem) rotate(-45deg);
+  }
+
+  /* Call to Action */
+  .cta 
+  {
+    grid-template-columns: 2fr 3fr;
+  }
+
+  .cta-form
+  {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px)
+{
+  /* Products Section */
+  .products-wrapper
+  {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  /* Hero Section */
+  .hero-container
+  {
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+    justify-self: center;
+    width: 100%;
+    margin: 0 auto;
+    height: 90vh;
+  }
+
+  .hero-content
+  {
+    text-align: center;
+    margin-bottom: 6.4rem;
+  }
+
+  .first-heading
+  {
+    font-size: 3.6rem;
+  }
+
+  .second-heading
+  {
+    font-size: 4.4rem;
+  }
+
+  .third-heading
+  {
+    font-size: 5.2rem;
+  }
+
+  .hero-description
+  {
+    font-size: 1.8rem;
+  }
+
+  /* Call to Action */
+  .cta-heading
+  {
+    font-size: 3rem;
+  }
+
+  /* Footer Section */
+  .footer-logo
+  {
+    font-size: 2.4rem;
+  }
+  .footer-container
+  {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .social-logos, .address-col 
+  {
+    grid-column: span 3;
+  }
+
+  .nav-col 
+  {
+    grid-row: 1;
+    grid-column: span 2;
+    margin-bottom: 3.2rem;
+  }
+}
+
+@media (max-width: 650px)
+{
+  /* Call to Action */
+  .cta 
+  {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-text-box 
+  {
+    padding: 3.2rem;
+  }
+
+  .cta-img-box 
+  {
+    height: 32rem;
+    grid-row: 1;
+  }
+}
+
+@media (max-width: 480px)
+{
+  /* Hero Section */
+  .first-heading
+  {
+    font-size: 3rem;
+  }
+
+  .second-heading
+  {
+    font-size: 3.6rem;
+  }
+
+  .third-heading
+  {
+    font-size: 4.4rem;
+  }
+
+  .hero-description
+  {
+    font-size: 1.6rem;
+  }
+
+  .main-button 
+  {
+    padding: 1.2rem 3.6rem;
+    margin: 4rem 0;
+  }
+
+  /* Main Section */
+  
+  .main-card--card
+  {
+    width: 30rem;
+    height: 30rem;
+  }
+
+  .icon 
+{
+  font-size: 20rem;
+}
+
+  .main-heading
+  {
+    margin-top: 4.8rem;
+    font-size: 2rem;
+  }
+
+  .main-text
+  {
+    margin-top: 2.6rem;
+  }
+
+  .main-button
+  {
+    padding: 1.2rem 3.6rem;
+    margin: 4rem 0;
+  }
+
+  /* Call to Action */
+  .cta-heading
+  {
+    font-size: 2.4rem;
+  }
+}

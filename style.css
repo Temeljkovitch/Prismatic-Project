@@ -1,0 +1,703 @@
+/* Font sizes (px):
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 */
+
+/* -- Spacing system (px):
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 */
+
+/* Global Reset */
+*
+{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
+}
+/* */
+
+html
+{
+  font-size: 62.5%;
+}
+
+body
+{
+  color: #fff;
+  font-weight: 400;
+}
+
+/*------------------*/
+/* Navigation Section */
+/*------------------*/
+
+.navbar
+{
+  background-color: #131313;
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.navbar-container
+{
+  display: flex;
+  justify-content: space-between;
+  height: 8rem;
+  z-index: 1;
+  width: 100%;
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 5rem;
+}
+
+#navbar-logo
+{
+  background: #FC466B;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right bottom, #FC466B 35%, #1488CC);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right bottom, #FC466B 35%, #1488CC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  background-size: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 3.2rem;
+}
+
+.nav-icon
+{
+  color: #FC466B;
+  font-size: 4.4rem;
+  margin-right: 1.4rem;
+}
+
+.navbar-menu
+{
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.navbar-links
+{
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  padding: 0 2rem;
+  transition: all 0.3s;
+}
+
+.navbar-links:hover
+{
+  color: #FC466B;
+  transition: all 0.3s;
+}
+
+.navbar-button
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+}
+
+.button 
+{
+  background: #c31432;
+  background: -webkit-linear-gradient(to right, #240b36, #c31432);
+  background: linear-gradient(to right, #240b36, #c31432);
+  text-decoration: none;
+  padding: 1.2rem 2rem;
+  border: none;
+  outline: none;
+  border-radius: 0.6rem;
+  color: #fff;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.button:hover
+{
+  background: #240b36;
+}
+
+.highlight
+{
+  border-bottom: 0.3rem solid rgb(252, 70, 107);
+}
+
+/*------------------*/
+/* Hero Section */
+/*------------------*/
+
+.section-hero
+{
+  background-color: #000;
+}
+
+.hero-container
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-self: center;
+  margin: 0 auto;
+  height: 100vh;
+  width: 100%;
+  max-width: 130rem;
+  z-index: 1;
+  padding: 0 4.6rem;
+}
+
+.first-heading
+{
+  font-size: 4.4rem;
+}
+
+.first-heading, .generic-heading--1
+{
+  background: #EB3349;
+  background: -webkit-linear-gradient(to bottom, #F45C43, #EB3349);
+  background: linear-gradient(to bottom, #F45C43, #EB3349);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.second-heading
+{
+  font-size: 5.2rem;
+  margin-left: 2rem;
+}
+
+.second-heading, .generic-heading--2
+{
+  background: #cc2b5e;
+  background: -webkit-linear-gradient(to bottom, #753a88, #cc2b5e);
+  background: linear-gradient(to bottom, #753a88, #cc2b5e); 
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.third-heading
+{
+  font-size: 6.2rem;
+  margin-left: 4rem;
+}
+
+.third-heading, .generic-heading--3
+{
+  background: #1488CC;
+  background: -webkit-linear-gradient(to bottom, #2B32B2, #1488CC);
+  background: linear-gradient(to bottom, #2B32B2, #1488CC);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.hero-description
+{
+  color: #fff;
+  margin-top: 2rem;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.main-button
+{
+  background: #c31432;
+  background: -webkit-linear-gradient(to right, #240b36 30%, #c31432);
+  background: linear-gradient(to right, #240b36 30%, #c31432);
+  font-size: 2.4rem;
+  padding: 1.4rem 3.2rem;
+  border: none;
+  outline: none;
+  border-radius: 0.6rem;
+  margin-top: 2.4rem;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.main-button a
+{
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Sliding animation for the button */
+.main-button::after
+{
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #240b36;
+  transition: all 0.4s;
+  border-radius: 0.6rem;
+}
+
+.main-button:hover::after
+{
+  width: 100%;
+}
+/* - */
+
+.hero-img--container
+{
+  text-align: center;
+}
+
+.hero-img 
+{
+  width: 90%;
+  height: 90%;
+}
+
+/*------------------*/
+/* Main Section */
+/*------------------*/
+
+.section-main 
+{
+  background-color: #131313;
+  padding: 8rem 4.6rem;
+}
+
+.main-title
+{
+  background: #FF4E50;
+  background: -webkit-linear-gradient(to bottom, #F9D423, #FF4E50);
+  background: linear-gradient(to bottom, #F9D423, #FF4E50); 
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  font-size: 2.4rem;
+  margin-bottom: 1.6rem;
+}
+
+.main-description
+{
+  font-size: 3.6rem;
+  color: #fff;
+  margin-bottom: 6.4rem;
+}
+
+.main-container
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  height: 90%;
+  z-index: 1;
+  width: 100%;
+  max-width: 130rem;
+}
+
+.main-content
+{
+  color: #fff;
+  width: 100%;
+}
+
+.main-heading
+{
+  font-size: 2rem;
+  background: #FF4E50;
+  background: -webkit-linear-gradient(to bottom, #F9D423, #FF4E50);
+  background: linear-gradient(to bottom, #F9D423, #FF4E50);  
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  text-transform: uppercase;
+  margin-bottom: 3.2rem;
+}
+
+.main-text
+{
+  margin-top: 1.6rem;
+  font-size: 3.6rem;
+  font-weight: 500;
+}
+
+.main-card--container
+{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.main-card--card
+{
+  margin: 1rem;
+  height: 44rem;
+  width: 44rem;
+  border-radius: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  background: #FF4E50;
+  background: -webkit-linear-gradient(to bottom, #F9D423, #FF4E50);
+  background: linear-gradient(to bottom, #F9D423, #FF4E50); 
+}
+
+.generic-text
+{
+  background: #FF4E50;
+  background: -webkit-linear-gradient(to right, #F9D423, #FF4E50);
+  background: linear-gradient(to right, #F9D423, #FF4E50); 
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.icon 
+{
+  font-size: 24rem;
+  align-self: center;
+}
+
+/*------------------*/
+/* Products Section */
+/*------------------*/
+
+.section-products
+{
+  background-color: #000;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 8rem 4.6rem;
+}
+
+.products-title
+{
+  background: #bc4e9c;
+  background: -webkit-linear-gradient(to bottom, #78ffd6, #a8ff78);
+  background: linear-gradient(to bottom, #78ffd6, #a8ff78);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  font-size: 2.4rem;
+  margin-bottom: 1.6rem;
+}
+
+.products-description
+{
+font-size: 3.6rem;
+color: #fff;
+margin-bottom: 6.4rem;
+}
+
+.products-wrapper
+{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  justify-content: center;
+}
+
+.products-card
+{
+  margin: 1rem;
+  height: 44rem;
+  width: 30rem;
+  border-radius: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  background-image: url(imgs/img1.jpg);
+  background-size: cover;
+  transition: all 0.3s;
+}
+
+/* Gradient border */
+.with-linear-gradient 
+{
+  border-style: solid;
+  border-width: 0.1rem;
+  border-image: linear-gradient(45deg, #78ffd6, #a8ff78) 1;
+}
+
+.products-card-2
+{
+  background-image: url(imgs/img2.jpg);
+  background-size: cover; 
+  background-position: center;
+}
+
+.products-card-3
+{
+  background-image: url(imgs/img3.jpg);
+  background-size: cover;
+  background-position: 35% 65%;
+}
+
+.products-card-4
+{
+  background-image: url(imgs/img4.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.products-card-title
+{
+  color: #fff;
+  font-size: 2.4rem;
+  text-align: center;
+  margin-bottom: 2.4rem;
+}
+
+.products-button
+{
+  display: flex;
+  justify-content: center;
+}
+
+.products-card button
+{
+  color: #a8ff78;
+  font-size: 1.8rem;
+  border: none;
+  outline: none;
+  background: none;
+  text-decoration: none;
+  margin-bottom: 32rem;
+}
+
+.products-card button:hover
+{
+  cursor: pointer;
+  color: #4e8331;
+}
+
+.products-card:hover
+{
+  transform: scale(1.1);
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+/*------------------*/
+/*  Call to Action Section */
+/*------------------*/
+
+.section-cta
+{
+  background-color: #131313;
+  padding: 8rem 4.6rem;
+}
+
+.cta-container
+{
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.cta
+{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  border-radius: 0.6rem;
+  background-image: linear-gradient(to right, #22c1c3, #fdbb2d);
+  overflow: hidden;
+}
+
+.cta-text-box
+{
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+}
+
+.cta-heading
+{
+  color: #000;
+  font-size: 3.6rem;
+  margin-bottom: 3.2rem;
+}
+
+.cta-text
+{
+  color: #000;
+  font-size: 1.8rem;
+  margin-bottom: 4.8rem;
+}
+
+.cta-img-box
+{
+  background-image: url(imgs/cta-img.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.cta-form
+{
+  color: #000;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+
+.cta-form label
+{
+  display: block;
+  font-size: 1.6rem;
+  margin-bottom: 1.2rem;
+}
+
+.cta-form input, .cta-form select
+{
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  border: none;
+  background-color: #fff;
+  border-radius: 0.6rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+/*------------------*/
+/* Footer Section */
+/*------------------*/
+
+.footer
+{
+  background-color: #000;
+  padding: 12.8rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.footer-container
+{
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+  padding: 0 4.6rem;
+  margin: 0 auto;
+}
+
+.social-logos
+{
+  display: flex;
+  flex-direction: column;
+}
+
+.social-icon:hover, .social-icon:active
+{
+  color: #FC466B;
+}
+
+.footer-logo
+{
+  display: block;
+  margin-bottom: 3.2rem;
+  background: #FC466B;
+  background: -webkit-linear-gradient(to right bottom, #FC466B 20%, #1488CC);
+  background: linear-gradient(to right bottom, #FC466B 20%, #1488CC);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  background-size: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 3rem;
+}
+
+.social-links
+{
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+}
+
+.social-icon
+{
+  color: #fff;
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.copyright
+{
+  font-size: 1.4rem;
+  line-height: 1.6;
+  margin-top: 3.2rem;
+}
+
+.footer-heading
+{
+  color: #FC466B;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+
+.contacts
+{
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.address
+{
+  margin-bottom: 2.4rem;
+}
+
+.footer-nav
+{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.footer-link:link,
+.footer-link:visited 
+{
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active
+{
+  color: #FC466B;
+}

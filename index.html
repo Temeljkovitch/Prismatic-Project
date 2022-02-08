@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="imgs/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="imgs/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="imgs/favicon/favicon-16x16.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <!-- Icons -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="queries.css">
+
+  <!-- JavaScript -->
+  <script defer src="script.js"></script>
+
+  <title>Prismatic</title>
+</head>
+<body>
+  <!-- Navigation Menu -->
+  <nav class="navbar">
+    <div class="navbar-container">
+
+      <a href="#home" id="navbar-logo"><ion-icon name="prism" class="nav-icon"></ion-icon></ion-icon>Prismatic</a>
+
+      <div class="navbar-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <ul class="navbar-menu">
+        <li class="navbar-item">
+          <a href="#home" class="navbar-links" id="home-page">Home</a>
+        </li>
+        <li class="navbar-item">
+          <a href="#about" class="navbar-links" id="about-page">About</a>
+        </li>
+        <li class="navbar-item">
+          <a href="#products" class="navbar-links" id="products-page">Products</a>
+        </li>
+        <li class="navbar-button">
+          <a href="#cta" class="button" id="signup">Sign Up</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  
+  <!-- Hero Section -->
+  <section class="section-hero" id="home">
+    <div class="hero-container">
+      <div class="hero-content">
+        <h1 class="first-heading">Futuristic</h1>
+        <h2 class="second-heading">Aesthetic</h2>
+        <h3 class="third-heading">Sophisticated</h3>
+        <p class="hero-description">Computer peripherals crafted with <span class="generic-heading--1">high-end technology</span> , providing the most <span class="generic-heading--2">comfort</span> while still being <span class="generic-heading--3">visually stunning</span>.</p>
+        <button class="main-button"><a href="/">Dive in</a></button>
+      </div>
+      <div class="hero-img--container">
+        <img src="imgs/hero-img.jpg" alt="Person beside a computer, a tablet and a phone with a bright and colorful display" class="hero-img">
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Section -->
+  <section class="section-main" id="about">
+    <h1 class="main-title">Our Principles</h1>
+    <p class="main-description">These are the three main principles we follow.</p>
+
+    <div class="main-container">
+      <div class="main-card--container">
+        <div class="main-card--card" id="card-1">
+          <ion-icon class="icon" name="cog-outline"></ion-icon>
+        </div>
+      </div>
+      <div class="main-content">
+        <h2 class="main-heading">Top-Notch Technology</h2>
+        <p class="main-text">We offer a wide range of products with the <span class="generic-text">most advanced</span> technology on the market.</p>
+        <button class="main-button"><a href="#">See all products</a></button>
+      </div>
+    </div>
+
+    <div class="main-container">
+      <div class="main-content">
+        <h2 class="main-heading">Comfort and Beauty</h2>
+        <p class="main-text">Our products are designed to be <span class="generic-text">aesthetic</span> pleasing while still giving you the most <span class="generic-text">comfort</span>.</p>
+        <button class="main-button"><a href="#">See all products</a></button>
+      </div>
+      <div class="main-card--container">
+        <div class="main-card--card" id="card-2">
+          <ion-icon class="icon" name="heart-circle-outline"></ion-icon>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-container">
+      <div class="main-card--container">
+        <div class="main-card--card" id="card-3">
+          <ion-icon class="icon" name="color-palette-outline"></ion-icon>
+        </div>
+      </div>
+      <div class="main-content">
+        <h2 class="main-heading">Myriad of mesmerizing colors</h2>
+        <p class="main-text">We came up with the most <span class="generic-text">dashing</span> and <span class="generic-text">dazzling</span> colors combinations to please every personal taste.</p>
+        <button class="main-button"><a href="#">See all products</a></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section class="section-products" id="products">
+
+    <h1 class="products-title">Our Products</h1>
+    <p class="products-description"> Check out our latest models with cutting edge technology.</p>
+    <div class="products-wrapper">
+      <div class="products-card products-card-1 with-linear-gradient">
+          <h2 class="products-card-title">Keyboards</h2>
+          <div class="products-button">
+            <button>Buy Now &#8250;</button>
+          </div>
+        </div>
+
+        <div class="products-card products-card-2 with-linear-gradient">
+          <h2 class="products-card-title">CPU Cases</h2>
+          <div class="products-button">
+            <button>Buy Now &#8250;</button>
+          </div>
+        </div>
+      
+        <div class="products-card products-card-3 with-linear-gradient">
+          <h2 class="products-card-title">Mouses</h2>
+          <div class="products-button">
+            <button>Buy Now &#8250;</button>
+          </div> 
+        </div>
+
+        <div class="products-card products-card-4 with-linear-gradient">
+          <h2 class="products-card-title">Memory (RAM)</h2>
+          <div class="products-button">
+            <button>Buy Now &#8250;</button>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="section-cta" id="cta">
+    <div class="cta-container">
+      <div class="cta">
+
+        <div class="cta-img-box" role="img" aria-label="Person in a colorful blackground">.
+        </div>
+
+        <div class="cta-text-box">
+          <h2 class="cta-heading">Subscribe to our newsletter to receive the latest updates and new products alerts.</h2>
+          <p class="cta-text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque, eligendi.
+          </p>
+
+          <form class="cta-form" name="sign-up" netlify>
+            <div>
+              <label for="full-name">Full Name</label>
+              <input id="full-name" type="text" placeholder="Your name here" name="full-name" required>
+            </div>
+
+            <div>
+              <label for="email">Email Address</label>
+              <input id="email" type="email" placeholder="Your email here" name="email" required>
+            </div>
+
+            <button class="main-button cta--button"><a href="#">Subscribe Now</a></button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="social-logos">
+        <a href="/" class="footer-logo"><ion-icon name="prism" class="nav-icon"></ion-icon>Prismatic</a>
+
+        <ul class="social-links">
+          <li>
+            <a class="footer-link" href="#">
+              <ion-icon class="social-icon" name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a class="footer-link" href="#">
+              <ion-icon class="social-icon" name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+          <li>
+            <a class="footer-link" href="#">
+              <ion-icon class="social-icon" name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+        </ul>
+
+        <p class="copyright">
+          © Prismatic 2022. All rights reserved
+        </p>
+      </div>
+
+      <div class="address-col">
+        <p class="footer-heading">Contact us</p>
+        <address class="contacts">
+          <p class="address">
+            761 Hazel St Akron
+            <br>
+            Ohio(OH), 44305
+          </p>
+          <p>
+            <a class="footer-link" href="tel:(330)535-9030">(330)535-9030</a>
+            <a class="footer-link" href="prismatic@email.com">prismatic@email.com</a>
+          </p>
+        </address>
+      </div>
+
+      <nav class="nav-col">
+        <p class="footer-heading">Account</p>
+        <ul class="footer-nav">
+          <li>
+            <a class="footer-link" href="#">Sign up</a>
+          </li>
+          <li>
+            <a class="footer-link" href="#">Sign in</a>
+          </li>
+          <li>
+            <a class="footer-link" href="#">Phone Apps</a>
+          </li>
+        </ul>
+      </nav>
+
+      <nav class="nav-col">
+        <p class="footer-heading">Company</p>
+        <ul class="footer-nav">
+          <li>
+            <a class="footer-link" href="#">About Prismatic</a>
+          </li>
+          <li>
+            <a class="footer-link" href="#">For Business</a>
+          </li>
+          <li>
+            <a class="footer-link" href="#">Our Partners</a>
+          </li>
+        </ul>
+      </nav>
+
+      <nav class="nav-col">
+        <p class="footer-heading">Resources</p>
+        <ul class="footer-nav">
+          <li>
+            <a class="footer-link" href="#">Help Center</a>
+          </li>
+          <li>
+            <a class="footer-link" href="#">Q&A Section</a>
+          </li>
+          <li>
+            <a class="footer-link" href="#">Terms & Conditons</a>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+  </footer>
+
+</body>
+</html>
